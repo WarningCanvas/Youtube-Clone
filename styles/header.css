@@ -1,0 +1,183 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid;
+    border-bottom-color: rgb(223, 222, 222);
+    border-bottom-width: 1px;
+    z-index: 100;
+
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.middle {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display:flex;
+    align-items: center;
+}
+
+.more-logo {
+    width:  24px;
+    margin-left: 20px;
+    margin-right: 24px;
+    padding-left: 4px;
+}
+
+.youtube-logo {
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.search-bar {
+    height: 36px;
+    border-radius: 1px;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 16px;
+    box-shadow: inset 1px 2px 3px rgb(0,0,0,0.05);
+    width: 0;
+    border: 1px solid rgb(193, 193, 193);
+}
+
+
+.search-bar::placeholder{
+    font-size: 16px;
+}
+
+.search-bar-logo {
+    height: 25px;
+    width: 35px;
+}
+
+.search-button {
+    height: 40px;
+    width: 66px;
+    border-style: solid;
+    border-color: rgb(193, 193, 193);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px; 
+    border-width: 1px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+.voice-button,
+.search-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apps-logo-container .tooltip,
+.create-logo-container .tooltip,
+.search-button .tooltip,
+.voice-button .tooltip {
+    background-color: rgb(114, 112, 112);
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    margin-left: 2px;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.create-logo-container:hover .tooltip,
+.apps-logo-container:hover .tooltip,
+.notification-logo-container:hover .tooltip {
+    opacity: 1;
+}
+
+.search-button:hover {
+    background-color: rgb(223, 222, 222);
+}
+
+.search-button:active {
+   background-color: rgb(218, 215, 215);
+}
+
+.voice-button {
+    margin-left: 10px;
+    border-width: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: rgb(249, 249, 249);
+}
+
+.voice-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.right {
+    width: 180px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.create-logo {
+    width: 24px;
+    cursor: pointer;
+}
+
+.apps-logo {
+    width: 24px;
+    cursor: pointer;
+}
+
+.notification-logo {
+    width: 24px;
+    cursor: pointer;
+}
+
+.current-user-profile {
+    height: 32px;
+}
+
+.notification-number-container {
+    position: relative;
+}
+.notification-number {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    background-color: rgb(191, 7, 7);
+    color: white;
+    border-radius: 10px;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 500;
+    
+}

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Youtube clone</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+    
+    
+    <body>
+       <nav class="sidebar">
+            <div class="sidebar-elements">
+                <img src="sidebar/home-icon.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-elements">
+                <img src="sidebar/explore-icon.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-elements">
+                <img src="sidebar/subscriptions-icon.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-elements">
+                <img src="sidebar/library.svg">
+                <div>Library</div>
+            </div>
+        </nav>
+       
+       
+
+       <header class="header">
+        <div class="left">
+            <img class="more-logo" src="header/more-logo.svg">
+            <img class="youtube-logo" src="header/youtube-logo.svg">
+        </div>
+        <div class="middle">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-button">
+                <img class="search-bar-logo" src="header/search-logo.svg">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-button">
+                <img class="voice-logo" src="header/voice-logo.svg">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+            
+        </div>
+        <div class="right">
+                <div class="create-logo-container">
+                    <img class="create-logo" src="header/create-logo.svg">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div class="apps-logo-container">
+                    <img class="apps-logo" src="header/apps-logo.svg">
+                    <div class="tooltip">Youtube apps</div>
+                </div>
+                <div class="notification-number-container">
+                    <img class="notification-logo" src="header/notification-logo.svg">
+                    <div class="notification-number">3</div>
+                </div>
+                <img class="current-user-profile" src="creator-profile/supersimpledev.jpg">
+        </div>
+        </header>
+    <!--put positon absolute inside position relative-->
+    
+    <main>
+        
+        <section class="video-grid">
+        
+        <div class="video-preview"> 
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"><img class="thumbnail-1" src="thumbnails/thumbnail-1.webp"></a>
+                <div class="video-time">
+                    14:20
+                </div>
+                </div>
+            
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/creator-1.jpeg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/creator-1.jpeg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                        Marques Brownlee 
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            19.3M subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+               
+               <div  class="video-info"> 
+                <p class="video-description">
+                    <a class="video-title-link" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">Talking Tech and AI with Google CEO Sundar Pichai!</a>
+                </p>
+        
+                <p class="video-author">
+                    <a class="video-author-link" href="https://www.youtube.com/@mkbhd">Marques Brownlee</a>
+                </p>
+        
+                <p class="video-stats">
+                    4.2M views &#183; 3 years ago
+                </p>
+               </div>              
+            </div>
+        </div> 
+
+        <div class="video-preview">
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=84dYijIpWjQ"><img class="thumbnail-1" src="thumbnails/thumbnail-4.webp"></a>
+                <div class="video-time">
+                    13:14
+                </div>
+            </div>
+
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/huberman.jpg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/huberman.jpg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                            Huberman Lab Clips 
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            957K subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+                <div class="video-info"> 
+                <p class="video-description">
+                    <a href="https://www.youtube.com/watch?v=84dYijIpWjQ" class="video-title-link">How to Build Willpower | David Goggins & Dr. Andrew Huberman</a>
+                </p>
+        
+                <p class="video-author">
+                    <a class="video-author-link" href="https://www.youtube.com/@HubermanLabClips">Huberman Lab Clips</a>
+                </p>
+        
+                <p class="video-stats">
+                    2.3M views &#183; 6 months ago
+                </p>
+               </div>              
+            </div>
+        </div>
+        
+        <div class="video-preview">
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=rxEMKXW2Wqs"><img class="thumbnail-1" src="thumbnails/thumbnail-2.webp"></a>
+                <div class="video-time">
+                    14:10
+                </div>
+            </div>
+            
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/athlean-x.jpg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/athlean-x.jpg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                            ATHLEAN-X™
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            13.8M subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+               
+               <div class="video-info"> 
+                <p class="video-description">
+                    <a class="video-title-link" href="https://www.youtube.com/watch?v=rxEMKXW2Wqs">Home Chest Workout | 10 Minutes (FOLLOW ALONG!)</a>
+                </p>
+        
+                <p class="video-author">
+                    <a class="video-author-link" href="https://www.youtube.com/@athleanx">ATHLEAN-X™</a>
+                </p>
+        
+                <p class="video-stats">
+                    7.5M views &#183; 5 years ago
+                </p>
+               </div>              
+            </div>
+        </div>
+
+        <div class="video-preview">
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=ikvrwOnay3g"><img class="thumbnail-1" src="thumbnails/thumbnail-3.webp"></a>
+                <div class="video-time">
+                    6:35
+                </div>
+            </div>
+            
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/bigthink.jpg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/bigthink.jpg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                            Big Think
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            7.17M subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+               
+               <div class="video-info"> 
+                <p class="video-description">
+                    <a class="video-title-link" href="https://www.youtube.com/watch?v=ikvrwOnay3g">Your brain doesn't detect reality. It creates it. | Lisa Feldman Barrett</a>
+                </p>
+        
+                <p class="video-author">
+                    <a class="video-author-link" href="https://www.youtube.com/@bigthink">Big Think</a>
+                </p>
+        
+                <p class="video-stats">
+                    1.2M views &#183; 1 year ago
+                </p>
+               </div>              
+            </div>
+        </div>
+
+        <div class="video-preview">
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=VGt-BZ-SxGI&t=5s"><img class="thumbnail-1" src="thumbnails/thumbnail-5.webp"></a>
+                <div class="video-time">
+                    20:43
+                </div>
+            </div>
+            
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/pewdiepie.jpg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/pewdiepie.jpg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                            PewDiePie
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            111M subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+               
+               <div class="video-info"> 
+                <p class="video-description">
+                    <a class="video-title-link" href="https://www.youtube.com/watch?v=VGt-BZ-SxGI&t=5s">Minecraft Part 1</a>
+                </p>
+        
+                <p class="video-author">
+                    <a class="video-author-link" href="https://www.youtube.com/@PewDiePie">PewDiePie</a>
+                </p>
+        
+                <p class="video-stats">
+                    57M views &#183; 5 years ago
+                </p>
+               </div>              
+            </div>
+        </div>
+
+        <div class="video-preview">
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=22030s"><img class="thumbnail-1" src="thumbnails/thumbnail-6.webp"></a>
+                <div class="video-time">
+                    6:31:23
+                </div>
+            </div>
+            
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/supersimpledev.jpg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/supersimpledev.jpg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                            SuperSimpleDev
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            490K subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+               
+               <div class="video-info"> 
+                <p class="video-description">
+                    <a class="video-title-link" href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=22030s">HTML & CSS Full Course - Beginner to Pro</a>
+                </p>
+        
+                <p class="video-author">
+                    <a href="https://www.youtube.com/@SuperSimpleDev" class="video-author-link">SuperSimpleDev</a>
+                </p>
+        
+                <p class="video-stats">
+                    10M views &#183; 2 years ago
+                </p>
+               </div>              
+            </div>
+        </div>
+
+        <div class="video-preview"> 
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=mScpHTIi-kM&t=1438s"><img class="thumbnail-1" src="thumbnails/thumbnail-7.webp"></a>
+                <div class="video-time">
+                    27:19
+                </div>
+            </div>
+            
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/veritasium.jpg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/veritasium.jpg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                            Veritasium
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            16M subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+               
+               <div class="video-info"> 
+                <p class="video-description">
+                    <a class="video-title-link" href="https://www.youtube.com/watch?v=mScpHTIi-kM&t=1438s">What Game Theory Reveals About Life, The Universe, and Everything</a>
+                </p>
+        
+                <p class="video-author">    
+                    <a class="video-author-link" href="https://www.youtube.com/@veritasium">Veritasium</a>
+                </p>
+        
+                <p class="video-stats">
+                    11M views &#183; 7 months ago
+                </p>
+               </div>              
+            </div>
+        </div> 
+
+        <div class="video-preview"> 
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=FJB7gbjiJKw&t=2s"><img class="thumbnail-1" src="thumbnails/thumbnail-8.webp"></a>
+                <div class="video-time">
+                    11:56
+                </div>
+            </div>
+            
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/vsauce.jpg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/vsauce.jpg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                            Vsauce
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            22.3 subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+               
+               <div class="video-info"> 
+                <p class="video-description">
+                    <a class="video-title-link" href="https://www.youtube.com/watch?v=FJB7gbjiJKw&t=2s">What's The Brightest Thing In the Universe?</a>
+                </p>
+        
+                <p class="video-author">    
+                    <a class="video-author-link" href="https://www.youtube.com/@Vsauce">Vsauce</a>
+                </p>
+        
+                <p class="video-stats">
+                    19M views &#183; 10 years ago
+                </p>
+               </div>              
+            </div>
+        </div>
+
+        <div class="video-preview"> 
+
+            <div class="thumbnail-grid">
+                <a href="https://www.youtube.com/watch?v=5GhhVHpPR_M&pp=ygUNY291bnQgbWUgb3V0IA%3D%3D"><img class="thumbnail-1" src="thumbnails/thumbnail-9.webp"></a>
+                <div class="video-time">
+                    11:56
+                </div>
+            </div>
+            
+            <div class="video-info-grid">
+               
+                <div class="profile-box">
+                <img class="profile-1" src="creator-profile/kendrick.jpg">
+                <div class="profile-toolkit">
+                    <div class="left-profile-toolkit"><img class="profile-toolkit-image" src="creator-profile/kendrick.jpg"></div>
+                    <div class="right-profile-toolkit">
+                        <p class="profile-toolkit-stats-name">
+                            Kendrick Lamar
+                    </p>
+                        <p class="profile-toolkit-stats-subs">
+                            16M subscribers
+                        </p>
+                </div>
+                </div>
+                </div>
+               
+               
+               <div class="video-info"> 
+                <p class="video-description">
+                    <a class="video-title-link" href="https://www.youtube.com/watch?v=5GhhVHpPR_M&pp=ygUNY291bnQgbWUgb3V0IA%3D%3D">Kendrick Lamar - Count Me Out</a>
+                </p>
+        
+                <p class="video-author">    
+                    <a class="video-author-link" href="https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ">Kendrick Lamar</a>
+                </p>
+        
+                <p class="video-stats">
+                    27M views &#183; 1 years ago
+                </p>
+               </div>              
+            </div>
+        </div>
+    </section>
+    </main>  
+    </body>
+</html>
